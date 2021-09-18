@@ -11,7 +11,10 @@
 
 <body>
   <header class="cabecera">
-    <img src="./assets/logo-long.svg" alt="logo" class="logo">
+    <div class="logo-container">
+      <img src="./assets/logo.svg" alt="logo" class="logo">
+      <span class="nombre">max-cars</span>
+    </div>
     <nav class="navegacion">
       <ul>
         <li><a href="">Inicio</a></li>
@@ -21,6 +24,47 @@
       </ul>
     </nav>
   </header>
+  <main class="contenedor-principal">
+    <section class="seccion">
+      <h1 class="titulo">Alquiler de vehiculos en Colombia</h1>
+      <div class="contenido-contenedor">
+        <img class="img-principal" src="./assets/aleta-tiburon.jpg" alt="aleta-tiburon">
+        <div class="descripcion-contenedor">
+          <p class="descripcion">
+            Gracias a nuestro servicio de alquiler de vehiculos en Colombia, podrá descubrir muchos atractivos turísticos de esta hermosa tierra con confort y flexibilidad. Nuestra flota está constituida por vehículos totalmente equipados y con una antigüedad media de tan solo 3 meses. En nuestras oficinas encontrará numerosos modelos de las principales marcas del mercado como Mercedes-Benz, Chevrolet, Volvo, Dodge y BMW. Viva la experiencia de recorrer las calles de Medellín y avenidas de Bogotá con un descapotable o viaje en familia con uno de nuestros SUV de gran capacidad. Muévase por tanto por la Costa norte y la Costa pacífica de Colombia con la libertad absoluta que le proporciona un vehiculo de MAX-CARS.
+          </p>
+          <button class="boton-reserva">Reservar ahora</button>
+        </div>
+      </div>
+    </section>
+    <section class="seccion">
+      <h2 class="subtitulo">
+        Nuestra categorias de vehiculos
+      </h2>
+      <div class="categorias-contenedor">
+        <div class="categoria-contendor">
+          <img class="img-categoria" src="./assets/descopetable.jpg" alt="descapotable">
+          <span class="cateogira-nombre">Descapotable</span>
+        </div>
+        <div class="categoria-contendor">
+          <img class="img-categoria" src="./assets/suv.jpg" alt="suv">
+          <span class="cateogira-nombre">Suv</span>
+        </div>
+        <div class="categoria-contendor">
+          <img class="img-categoria" src="./assets/limousine.jpeg" alt="limousine">
+          <span class="cateogira-nombre">Limousine</span>
+        </div>
+        <div class="categoria-contendor">
+          <img class="img-categoria" src="./assets/pickup.jpg" alt="pickup">
+          <span class="cateogira-nombre">Pickup</span>
+        </div>
+        <div class="categoria-contendor">
+          <img class="img-categoria" src="./assets/furgoneta.jpg" alt="furgoneta">
+          <span class="cateogira-nombre">Furgoneta</span>
+        </div>
+      </div>
+    </section>
+  </main>
   <h1 class="titulo-formulario">Registro clientes</h1>
   <form class="form-cliente">
     <div class="form-input-caja">
@@ -33,6 +77,8 @@
     </div>
     <button class="form-boton" type="submit">Guardar</button>
   </form>
+  <br>
+  <br>
 </body>
 
 </html>
