@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MAX-CARS</title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./cliente.css">
 </head>
 
 <body>
@@ -26,43 +26,18 @@
   </header>
   <main class="contenedor-principal">
     <section class="seccion">
-      <h1 class="titulo">Alquiler de vehiculos en Colombia</h1>
-      <div class="contenido-contenedor">
-        <img class="img-principal" src="./assets/aleta-tiburon.jpg" alt="aleta-tiburon">
-        <div class="descripcion-contenedor">
-          <p class="descripcion">
-            Gracias a nuestro servicio de alquiler de vehiculos en Colombia, podrá descubrir muchos atractivos turísticos de esta hermosa tierra con confort y flexibilidad. Nuestra flota está constituida por vehículos totalmente equipados y con una antigüedad media de tan solo 3 meses. En nuestras oficinas encontrará numerosos modelos de las principales marcas del mercado como Mercedes-Benz, Chevrolet, Volvo, Dodge y BMW. Viva la experiencia de recorrer las calles de Medellín y avenidas de Bogotá con un descapotable o viaje en familia con uno de nuestros SUV de gran capacidad. Muévase por tanto por la Costa norte y la Costa pacífica de Colombia con la libertad absoluta que le proporciona un vehiculo de MAX-CARS.
-          </p>
-          <button class="boton-reserva">Reservar ahora</button>
+      <h1 class="titulo-formulario">Registro clientes</h1>
+      <form class="form-cliente">
+        <div class="form-input-caja">
+          <label class="form-label" for="cedula">Cedula</label>
+          <input class="form-input" type="text" name="cedula" id="cedula" placeholder="Ingrese cedula">
+          <label class="form-label" for="nombre">Nombre</label>
+          <input class="form-input" type="text" name="nombre" id="nombre" placeholder="Ingrese nombre">
+          <label class="form-label" for="apellido">Apellido</label>
+          <input class="form-input" type="text" name="apellido" id="apellido" placeholder="Ingrese apellido">
         </div>
-      </div>
-    </section>
-    <section class="seccion">
-      <h2 class="subtitulo">
-        Nuestra categorias de vehiculos
-      </h2>
-      <div class="categorias-contenedor">
-        <div class="categoria-contendor">
-          <img class="img-categoria" src="./assets/descopetable.jpg" alt="descapotable">
-          <span class="cateogira-nombre">Descapotable</span>
-        </div>
-        <div class="categoria-contendor">
-          <img class="img-categoria" src="./assets/suv.jpg" alt="suv">
-          <span class="cateogira-nombre">Suv</span>
-        </div>
-        <div class="categoria-contendor">
-          <img class="img-categoria" src="./assets/limousine.jpeg" alt="limousine">
-          <span class="cateogira-nombre">Limousine</span>
-        </div>
-        <div class="categoria-contendor">
-          <img class="img-categoria" src="./assets/pickup.jpg" alt="pickup">
-          <span class="cateogira-nombre">Pickup</span>
-        </div>
-        <div class="categoria-contendor">
-          <img class="img-categoria" src="./assets/furgoneta.jpg" alt="furgoneta">
-          <span class="cateogira-nombre">Furgoneta</span>
-        </div>
-      </div>
+        <button class="form-boton" type="submit">Guardar</button>
+      </form>
     </section>
   </main>
   <footer>
@@ -115,7 +90,7 @@
       </div>
     </div>
   </footer>
-  
+
 </body>
 
 </html>
