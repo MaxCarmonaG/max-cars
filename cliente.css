@@ -135,14 +135,14 @@ footer {
   column-gap: 1rem;
 }
 
-.titulo-formulario {
+.form-titulo {
   text-align: center;
 }
 
 .form-cliente {
   max-width: 35rem;
   padding: 2rem 1rem;
-  margin: 1rem;
+  margin: 1rem auto;
   border: 1px solid #402e32;
   border-radius: 8px;
 }
@@ -151,9 +151,9 @@ footer {
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
+  grid-row-gap: 2rem;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .form-label {
@@ -164,6 +164,38 @@ footer {
   border-radius: 4px;
   padding: 0.5rem;
   font-weight: 600;
+  border: 2px solid #402e32;
+  width: 100%;
+}
+
+.input-invalido {
+  border-color: #FF0000;
+}
+
+.form-input:focus-visible {
+  outline: #f4c329 auto 1px;
+}
+
+.validacion-contenedor {
+  position: relative;
+}
+
+.validacion {
+  position: absolute;
+  left: 0;
+  bottom: -1.25rem;
+  color: #FF0000;
+  font-weight: 700;
+  display: none;
+}
+
+.invalido {
+  display: unset;
+}
+
+.form-boton-contenedor {
+  display: flex;
+  gap: 1rem;
 }
 
 .form-boton {
@@ -171,4 +203,16 @@ footer {
   margin: 0 auto;
   width: 10rem;
   justify-self: center;
+  color: #402e32;
+  background-color: #f4c329;
+  border: 2px solid #402e32;
+  box-shadow: 5px 10px 15px #000;
+  border-radius: 10px 0;
+  padding: 0.5rem 0.5rem;
+  font-weight: 700;
+}
+
+.form-boton:active {
+  transform: translateY(3px);
+  box-shadow: none;
 }
