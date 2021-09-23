@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAX-CARS</title>
+    <link rel="stylesheet" href="./reparacion.styles.css">
+</head>
+<body>
+    <header class="cabecera2">
+        <img src="./assets/logo2.jpeg" alt="logo2" class="logo2">
+        <span class="titulo-cabecera2">max-cars</span>  
+    </header>
+    <h1 class="titulo-formulario">Registre reparacion del vehiculo</h1>
+    <form class="form-reparacion">
+        <div class="form-input-caja">
+            <label class="form-label" for="id-codigo">Id-Codigo</label>
+            <input class="form-input" type="text" name="id-codigo" id="id-codigo" placeholder="Ingrese Id-Codigo">
+            <label class="form-label" for="fecha">Fecha</label>
+            <input class="form-input" type="datetime" name="fecha" id="fecha" placeholder="Ingrese la fecha">
+            <label class="form-label" for="dias">Dias</label>
+            <input class="form-input" type="number" name="dias" id="dias" placeholder="Ingrese los dias de reparacion">
+            <label class="form-label" for="precio">Precio</label>
+            <input class="form-input" tyte="number" name="precio" id="precio" placeholder="Ingrese el precio de la reparacion">
+            
+            <span><strong>Motivo</strong></span>
+            <textarea class="textarea1">Excriba el motivo de reparacion...</textarea>
+
+        </div>
+        <button class="form-button" type="submit">Guardar</button>
+    </form>
+</body>
+</html>

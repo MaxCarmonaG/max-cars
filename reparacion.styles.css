@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+.cabecera2 {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    background-color: darkorange;
+  }
+
+.logo2 {
+    width: 4rem;
+    height: 4rem;
+}
+
+.titulo-cabecera2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.titulo-formulario {
+  text-align: center;
+}
+
+.form-reparacion {
+  max-width: 35rem;
+  padding: 2rem 1rem;
+  margin: 1rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+}
+
+.form-input-caja {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.form-input {
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto;
+  width: 10rem;
+  justify-self: center;
+}
+
+.textarea1 {
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-weight: 800;
+}
