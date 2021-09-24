@@ -149,6 +149,7 @@ footer {
   border: 2px solid #d4581e;
   border-radius: 8px;
   background-color: #402e32;
+  box-shadow: 5px 10px 15px #000;
 }
 
 .form-input-caja {
