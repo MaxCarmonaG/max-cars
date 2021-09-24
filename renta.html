@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="renta.css">
+
+    <title>Formulario de Renta</title>
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="logo-container">
+            <img src="./assets/logo.svg" alt="logo" class="logo">
+            <span class="nombre">max-cars</span>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/renta.html">Renta</a></li>
+                <li><a href="/cliente.html">Cliente</a></li>
+                <li><a href="/vehiculo.html">Vehiculo</a></li>
+                <li><a href="/reparacion.html">Reparacion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenedor-principal">
+        <section class="seccion">
+            <form class="form-renta" action="" onsubmit="insertCliente(event)">
+                <h1 class="form-titulo">Registro Renta</h1>
+                <div class="form-input-caja">
+
+                    <section class="form-Registro">
+
+                        <input class="controls" type="text" name="codigo" id="nombre" placeholder="Codigo">
+                        <input class="controls" type="text" name="importe" id="nombre" placeholder="Importe">
+                        <input class="controls" type="text" name="Kilometraje" id="nombre" placeholder="Kilometraje">
+                        <input class="controls" type="text" name="nombre" id="nombre" placeholder="Fecha de Renta">
+                        <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a> </p>
+                        <input class="botons" type="submit" value="Registrar">
+
+                    </section>
+
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="pie-contendedor">
+            <div class="contacto-contenedor">
+                <div class="icon redondo">
+                    <img src="./assets/svg/location.svg" alt="localizacion">
+                </div>
+                <span>
+                  Cl 70 # 3 - 20
+                  <br>
+                  <strong>Cartagena, Colombia</strong>
+                </span>
+                <div class="icon redondo">
+                    <img src="./assets/svg/phone.svg" alt="telefono">
+                </div>
+                <span>
+                  <strong>+57 60 5 123456</strong>
+                </span>
+                <div class="icon redondo">
+                    <img src="./assets/svg/mail.svg" alt="correo">
+                </div>
+                <span>
+                  <strong>info@max-cars.com</strong>
+                </span>
+            </div>
+            <div class="miembros-contenedor">
+                <span><strong>Miembros de la compañia</strong></span>
+                <ul class="miembros">
+                    <li>Lorena Osorio</li>
+                    <li>Edgar Cabrera</li>
+                    <li>Daniel Martinez</li>
+                    <li>Euler Suarez</li>
+                    <li>Max Carmona</li>
+                </ul>
+                <div class="icons-contenedor">
+                    <a class="icon" href="https://www.facebook.com" target="_blank">
+                        <img src="./assets/svg/facebook.svg" alt="facebook">
+                    </a>
+                    <a class="icon" href="https://twitter.com" target="_blank">
+                        <img src="./assets/svg/twitter.svg" alt="twitter">
+                    </a>
+                    <a class="icon" href="https://www.linkedin.com" target="_blank">
+                        <img src="./assets/svg/linkedin.svg" alt="linkedin">
+                    </a>
+                    <a class="icon" href="https://github.com/MaxCarmonaG/max-cars" target="_blank">
+                        <img src="./assets/svg/github.svg" alt="github">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
