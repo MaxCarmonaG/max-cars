@@ -18,19 +18,20 @@
     <nav class="navegacion">
       <ul>
         <li><a href="/index.html">Inicio</a></li>
-        <li><a href="">Renta</a></li>
+        <li><a href="/renta.html">Renta</a></li>
         <li><a href="/cliente.html">Cliente</a></li>
-        <li><a href="">Vehiculo</a></li>
+        <li><a href="/vehiculo.html">Vehiculo</a></li>
+        <li><a href="/reparacion.html">Reparacion</a></li>
       </ul>
     </nav>
   </header>
   <main class="contenedor-principal">
     <section class="seccion">
-      <h1 class="form-titulo">Registro vehiculos</h1>
       <form class="form-vehiculo" action="" onsubmit="insertCliente(event)">
+        <h1 class="form-titulo">Registro vehiculos</h1>
         <div class="form-input-caja">
 
-         <label class="form-label" for="Modelo">Modelo</label>
+          <label class="form-label" for="Modelo">Modelo</label>
           <div class="validacion-contenedor">
             <input required class="form-input" type="text" name="Modelo" id="Modelo" placeholder="Año del vehiculo...">
             <span class="validacion" id="valida-Modelo">Campo requerido</span>
@@ -42,35 +43,36 @@
             <span class="validacion" id="valida-Marca">Campo requerido</span>
           </div>
 
-          <label for="country">Tipo</label>
-            <select id="country" name="country">
-          <option value="descapotable">Descapotable</option>
-          <option value="suv">SUV</option>
-          <option value="pickup">Pickup</option>
-          <option value="furgoneta">Furgoneta</option>
-          <option value="limosine">Limosine</option>
-            </select>
-          </div>
+          <label class="form-label" for="tipo">Tipo</label>
+          <select id="tipo" name="tipo">
+            <option value="descapotable">Descapotable</option>
+            <option value="suv">SUV</option>
+            <option value="pickup">Pickup</option>
+            <option value="furgoneta">Furgoneta</option>
+            <option value="limosine">Limosine</option>
+          </select>
 
-          <label for="country">Color</label>
-            <select id="country" name="country">
-          <option value="Rojo">Rojo</option>
-          <option value="Blanco">Blanco</option>
-          <option value="Gris">Gris</option>
-          <option value="Negro">Negro</option>
-          <option value="Azul">Azul</option>
-          <option value="Azul_Celeste">Azul Celeste</option>
-            </select>
-          </div>
-        
-          <p>¿ Vidrios polarizados ?:</p>
-              <input type="radio" id="Si" name="fav_language" value="Si">
-              <label for="Si">Si</label>
-              <input type="radio" id="No" name="fav_language" value="No">
-              <label for="No">No</label>
-            
-          <p><strong>Añadir Comentario</strong>:</p>
-           <textarea>Escriba su comentario...</textarea>
+          <label class="form-label" for="color">Color</label>
+          <select id="color" name="color">
+            <option value="Rojo">Rojo</option>
+            <option value="Blanco">Blanco</option>
+            <option value="Gris">Gris</option>
+            <option value="Negro">Negro</option>
+            <option value="Azul">Azul</option>
+            <option value="Azul_Celeste">Azul Celeste</option>
+          </select>
+        </div>
+
+        <div class="radio-contenedor">
+          <span>¿ Vidrios polarizados ?:</span>
+          <input type="radio" id="si" name="polarizado" value=true>
+          <label for="si">Si</label>
+          <input type="radio" id="no" name="polarizado" value=false>
+          <label for="no">No</label>
+        </div>
+
+        <span class="form-label">Añadir Comentario:</span>
+        <textarea class="form-textarea">Escriba su comentario...</textarea>
 
         </div>
         <div class="form-boton-contenedor">
@@ -130,7 +132,7 @@
       </div>
     </div>
   </footer>
-<script src="">vehiculo.js</script>
+  <script src="vehiculo.js"></script>
 </body>
 
 </html>
