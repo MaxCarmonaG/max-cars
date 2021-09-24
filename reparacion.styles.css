@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    padding-top: 6rem;
+    background: #fdc830;
+    background: -webkit-linear-gradient(#fdc830, #f37335);
+    background: linear-gradient(#fdc830, #f37335);
+    color: #402e32;
+  }
+
+  .cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+    background-color: #402e32;
+    margin-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 4rem;
+    width: fit-content;
+  }
+  
+  .nombre {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #dfe0df;
+    margin-left: 1rem;
+  }
+  
+  .navegacion > ul {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    list-style-type: none;
+  }
+  
+  .navegacion > ul > li > a {
+    text-decoration: none;
+    color: #dfe0df;
+  }
+  
+  .navegacion > ul > li > a:hover {
+    text-decoration: underline;
+  }
+
+.titulo-cabecera2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.titulo-formulario {
+    text-align: center;
+    font-size: 2rem;
+    color: #dfe0df;
+    margin-bottom: 2rem;
+}
+
+.form-reparacion {
+  max-width: 35rem;
+  padding: 2rem 1rem;
+  margin: 1rem auto;
+  border: 2px solid #d4581e;
+  border-radius: 8px;
+  box-shadow: 5px 10px 15px #000;
+  background-color: #402e32;
+  color:#dfe0df;
+}
+
+.form-input-caja {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.form-input {
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+
+.form-boton-contenedor {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-boton {
+  display: block;
+  margin: 0 auto;
+  width: 10rem;
+  justify-self: center;
+  color: #402e32;
+  background-color: #f4c329;
+  border: 2px solid #402e32;
+  box-shadow: 5px 10px 15px #000;
+  border-radius: 10px 0;
+  padding: 0.5rem 0.5rem;
+  font-weight: 700;
+}
+
+.form-boton:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
+.textarea1 {
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-weight: 800;
+}
+
+footer {
+  background-color: #402e32;
+  color: #dfe0df;
+  display: flex;
+  justify-content: center;
+}
+
+.pie-contendedor {
+  max-width: 75rem;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacto-contenedor {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  place-items: center;
+  gap: 1rem;
+}
+
+.contacto-contenedor > span {
+  justify-self: start;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: #4e4637;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redondo {
+  border-radius: 50%;
+}
+
+.icon > img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.miembros-contenedor {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.miembros {
+  margin-left: 1rem;
+}
+
+.miembros > li:not(:last-child) {
+  margin-bottom: 0.5rem; 
+}
+
+.icons-contenedor {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 1rem;
+}
