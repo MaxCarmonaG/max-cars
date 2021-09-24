@@ -107,6 +107,8 @@
   margin: 0 auto;
   width: 10rem;
   justify-self: center;
+  box-shadow: 5px 10px 15px #000;
+
 }
 
 .textarea1 {
