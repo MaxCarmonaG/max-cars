@@ -70,17 +70,21 @@
 }
 
 .titulo-formulario {
-  text-align: center;
+    text-align: center;
+    font-size: 2rem;
+    color: #dfe0df;
+    margin-bottom: 2rem;
 }
 
 .form-reparacion {
   max-width: 35rem;
   padding: 2rem 1rem;
   margin: 1rem auto;
-  border: 1px solid #402e32;
+  border: 2px solid #d4581e;
   border-radius: 8px;
   box-shadow: 5px 10px 15px #000;
-  background-color: #dfe0df;
+  background-color: #402e32;
+  color:#dfe0df;
 }
 
 .form-input-caja {
@@ -102,13 +106,29 @@
   font-weight: 600;
 }
 
-.form-button {
+
+.form-boton-contenedor {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-boton {
   display: block;
   margin: 0 auto;
   width: 10rem;
   justify-self: center;
+  color: #402e32;
+  background-color: #f4c329;
+  border: 2px solid #402e32;
   box-shadow: 5px 10px 15px #000;
+  border-radius: 10px 0;
+  padding: 0.5rem 0.5rem;
+  font-weight: 700;
+}
 
+.form-boton:active {
+  transform: translateY(3px);
+  box-shadow: none;
 }
 
 .textarea1 {

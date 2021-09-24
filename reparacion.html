@@ -16,29 +16,33 @@
         <nav class="navegacion">
           <ul>
             <li><a href="/index.html">Inicio</a></li>
-            <li><a href="">Renta</a></li>
+            <li><a href="/renta.html">Renta</a></li>
             <li><a href="/cliente.html">Cliente</a></li>
-            <li><a href="">Vehiculo</a></li>
+            <li><a href="/vehiculo.html">Vehiculo</a></li>
+            <li><a href="/reparacion.html">Reparacion</a></li>
           </ul>
         </nav>
       </header>
-    <h1 class="titulo-formulario">Registre reparacion del vehiculo</h1>
-    <form class="form-reparacion">
+      <form class="form-reparacion">
+        <h1 class="titulo-formulario">Registro de reparacion</h1>
         <div class="form-input-caja">
-            <label class="form-label" for="id-codigo">Id-Codigo</label>
-            <input class="form-input" type="text" name="id-codigo" id="id-codigo" placeholder="Ingrese Id-Codigo">
+          <label class="form-label" for="id-codigo">Id-Codigo</label>
+          <input class="form-input" type="text" name="id-codigo" id="id-codigo" placeholder="Ingrese Id-Codigo">
             <label class="form-label" for="fecha">Fecha</label>
-            <input class="form-input" type="datetime" name="fecha" id="fecha" placeholder="Ingrese la fecha">
+            <input class="form-input" type="date" name="fecha" id="fecha" placeholder="Ingrese la fecha">
             <label class="form-label" for="dias">Dias</label>
             <input class="form-input" type="number" name="dias" id="dias" placeholder="Ingrese los dias de reparacion">
             <label class="form-label" for="precio">Precio</label>
-            <input class="form-input" tyte="number" name="precio" id="precio" placeholder="Ingrese el precio de la reparacion">
+            <input class="form-input" type="number" name="precio" id="precio" placeholder="Ingrese el precio de la reparacion">
             
             <span><strong>Motivo</strong></span>
-            <textarea class="textarea1">Excriba el motivo de reparacion...</textarea>
+            <textarea class="textarea1">Escriba el motivo de reparacion...</textarea>
 
         </div>
-        <button class="form-button" type="submit">Guardar</button>
+        <div class="form-boton-contenedor">
+          <button class="form-boton" type="submit">Guardar</button>
+          <button class="form-boton" type="reset" onclick="limpiarCampos()">Limpiar</button>
+        </div>
     </form>
     <footer>
         <div class="pie-contendedor">
