@@ -12,6 +12,10 @@ body {
     color: #c46a40;
 }
 
+.seccion {
+    margin-bottom: 2rem;
+}
+
 .cabecera {
     display: flex;
     align-items: center;
@@ -201,6 +205,24 @@ footer {
 
 .form-input:focus-visible {
     outline: #f4c329 auto 1px;
+}
+
+.remover-ancho {
+    width: unset;
+}
+
+
+.radio-contenedor {
+    display: flex;
+    align-items: center;
+}
+
+.radio-contenedor > input {
+    margin-right: 0.5rem;
+}
+
+.radio-contenedor > label {
+    margin-right: 1rem;
 }
 
 .form-boton-contenedor {

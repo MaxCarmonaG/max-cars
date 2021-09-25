@@ -33,10 +33,10 @@
                 <div class="form-input-caja">
 
 
-                    <label class="form-label" for="codigo">Codigo</label>
+                    <label class="form-label" for="id-vehiculo">Id vehiculo</label>
                     <div class="validacion-contenedor">
-                        <input required class="form-input" type="text" name="codigo" id="codigo" placeholder="Ingre el codigo...">
-                        <span class="validacion" id="valida-codigo">Campo requerido</span>
+                        <input required class="form-input" type="text" name="id-vehiculo" id="id-vehiculo" placeholder="Ingre el id del vehiculo...">
+                        <span class="validacion" id="valida-id-vehiculo">Campo requerido</span>
                     </div>
                     <label class="form-label" for="importe">Importe</label>
                     <div class="validacion-contenedor">
@@ -45,13 +45,28 @@
                     </div>
                     <label class="form-label" for="kilometraje">kilometraje</label>
                     <div class="validacion-contenedor">
-                        <input required class="form-input" type="text" name="kilometraje" id="kilometraje" placeholder="Ingre el kilometraje...">
+                        <input required class="form-input" type="number" name="kilometraje" id="kilometraje" placeholder="Ingre el kilometraje...">
                         <span class="validacion" id="valida-kilometraje">Campo requerido</span>
                     </div>
                     <label class="form-label" for="fecha-renta">fecha renta</label>
                     <div class="validacion-contenedor">
                         <input required class="form-input" type="date" name="fecha-renta" id="fecha-renta">
                         <span class="validacion" id="valida-kilometraje">Campo requerido</span>
+                    </div>
+                    <span class="form-label" for="dias">Dias a rentar</span>
+                    <div class="validacion-contenedor radio-contenedor">
+                        <input required class="form-input remover-ancho" type="radio" name="dias-renta" id="1-semana" value="7">
+                        <label for="1-semana" class="form-label">1 semana</label>
+                        <input required class="form-input remover-ancho" type="radio" name="dias-renta" id="2-semanas" value="15">
+                        <label for="2-semanas" class="form-label">2 semanas</label>
+                        <input required class="form-input remover-ancho" type="radio" name="dias-renta" id="mes" value="30">
+                        <label for="mes" class="form-label">1 mes</label>
+                        <span class="validacion" id="valida-kilometraje">Campo requerido</span>
+                    </div>
+                    <label class="form-label" for="desceunto">Aplica descuento?</label>
+                    <div class="validacion-contenedor">
+                        <input required class="form-input remover-ancho" type="checkbox" name="desceunto" id="desceunto">
+                        <span class="validacion" id="valida-desceunto">Campo requerido</span>
                     </div>
                 </div>
 
