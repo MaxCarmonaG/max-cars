@@ -126,14 +126,13 @@ footer {
 }
 
 .form-renta {
-    width: 35rem;
-    background: #402e32;
-    padding: 2rem;
-    margin: 4rem auto 2rem;
-    border-radius: 4px;
-    font-family: 'calibri';
-    color: rgb(189, 131, 8);
-    box-shadow: 7px 13px 37px #000;
+    max-width: 35rem;
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+    border: 2px solid #d4581e;
+    border-radius: 8px;
+    background-color: #402e32;
+    box-shadow: 5px 10px 15px #000;
 }
 
 .form-titulo {
@@ -165,22 +164,65 @@ footer {
     font-size: 18px;
 }
 
-.form-Registro a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+.form-input-caja {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
-.form-Registro a:hover {
-    color: white;
-    text-decoration: underline;
+.form-label {
+    font-weight: 600;
+    color: #dfe0df;
 }
 
-.form-Registro .botons {
+.validacion-contenedor {
+    position: relative;
+}
+
+.validacion {
+    position: absolute;
+    left: 0;
+    bottom: -1.25rem;
+    color: #FF0000;
+    font-weight: 700;
+    display: none;
+}
+
+.form-input {
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-weight: 600;
+    border: 2px solid #402e32;
     width: 100%;
-    background: #c5ac1f;
-    border: none;
-    padding: 12px;
-    color: rgb(17, 2, 2);
-    margin: 16px 0;
-    font-size: 16px;
+}
+
+.form-input:focus-visible {
+    outline: #f4c329 auto 1px;
+}
+
+.form-boton-contenedor {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-boton {
+    display: block;
+    margin: 0 auto;
+    width: 10rem;
+    justify-self: center;
+    color: #402e32;
+    background-color: #f4c329;
+    border: 2px solid #402e32;
+    box-shadow: 5px 10px 15px #000;
+    border-radius: 10px 0;
+    padding: 0.5rem 0.5rem;
+    font-weight: 700;
+}
+
+.form-boton:active {
+    transform: translateY(3px);
+    box-shadow: none;
 }

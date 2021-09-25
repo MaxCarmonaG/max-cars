@@ -32,18 +32,35 @@
                 <h1 class="form-titulo">Registro Renta</h1>
                 <div class="form-input-caja">
 
-                    <section class="form-Registro">
 
-                        <input class="controls" type="text" name="codigo" id="nombre" placeholder="Codigo">
-                        <input class="controls" type="text" name="importe" id="nombre" placeholder="Importe">
-                        <input class="controls" type="text" name="Kilometraje" id="nombre" placeholder="Kilometraje">
-                        <input class="controls" type="text" name="nombre" id="nombre" placeholder="Fecha de Renta">
-                        <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a> </p>
-                        <input class="botons" type="submit" value="Registrar">
-
-                    </section>
-
+                    <label class="form-label" for="codigo">Codigo</label>
+                    <div class="validacion-contenedor">
+                        <input required class="form-input" type="text" name="codigo" id="codigo" placeholder="Ingre el codigo...">
+                        <span class="validacion" id="valida-codigo">Campo requerido</span>
+                    </div>
+                    <label class="form-label" for="importe">Importe</label>
+                    <div class="validacion-contenedor">
+                        <input required class="form-input" type="text" name="importe" id="importe" placeholder="Ingre el importe...">
+                        <span class="validacion" id="valida-importe">Campo requerido</span>
+                    </div>
+                    <label class="form-label" for="kilometraje">kilometraje</label>
+                    <div class="validacion-contenedor">
+                        <input required class="form-input" type="text" name="kilometraje" id="kilometraje" placeholder="Ingre el kilometraje...">
+                        <span class="validacion" id="valida-kilometraje">Campo requerido</span>
+                    </div>
+                    <label class="form-label" for="fecha-renta">fecha renta</label>
+                    <div class="validacion-contenedor">
+                        <input required class="form-input" type="date" name="fecha-renta" id="fecha-renta">
+                        <span class="validacion" id="valida-kilometraje">Campo requerido</span>
+                    </div>
                 </div>
+
+                <div class="form-boton-contenedor">
+                    <button class="form-boton" type="submit">Guardar</button>
+                    <button class="form-boton" type="reset" onclick="limpiarCampos()">Limpiar</button>
+                </div>
+
+
             </form>
         </section>
     </main>
