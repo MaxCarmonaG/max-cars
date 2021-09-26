@@ -15,15 +15,21 @@
       <img src="./assets/logo.svg" alt="logo" class="logo">
       <span class="nombre">max-cars</span>
     </div>
-    <nav class="navegacion">
-      <ul>
-        <li><a href="/index.html">Inicio</a></li>
-        <li><a href="/renta.html">Renta</a></li>
-        <li><a href="/cliente.html">Cliente</a></li>
-        <li><a href="/vehiculo.html">Vehiculo</a></li>
-        <li><a href="/reparacion.html">Reparacion</a></li>
-      </ul>
-    </nav>
+    <div class="nav-contenedor">
+      <input class="menu-input" type="checkbox" id="menu">
+      <label for="menu" class="menu-label">
+        <img class="menu-icon" src="./assets/svg/menu.svg" alt="menu">
+      </label>
+      <nav class="navegacion">
+        <ul>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/renta.html">Renta</a></li>
+          <li><a href="/cliente.html">Cliente</a></li>
+          <li><a href="/vehiculo.html">Vehículo</a></li>
+          <li><a href="/reparacion.html">Reparación</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="contenedor-principal">
     <section class="seccion">
@@ -32,9 +38,15 @@
         <img class="img-principal" src="./assets/aleta-tiburon.jpg" alt="aleta-tiburon">
         <div class="descripcion-contenedor">
           <p class="descripcion">
-            Gracias a nuestro servicio de alquiler de vehiculos en Colombia, podrá descubrir muchos atractivos turísticos de esta hermosa tierra con confort y flexibilidad. Nuestra flota está constituida por vehículos totalmente equipados y con una antigüedad media de tan solo 3 meses. En nuestras oficinas encontrará numerosos modelos de las principales marcas del mercado como Mercedes-Benz, Chevrolet, Volvo, Dodge y BMW. Viva la experiencia de recorrer las calles de Medellín y avenidas de Bogotá con un descapotable o viaje en familia con uno de nuestros SUV de gran capacidad. Muévase por tanto por la Costa norte y la Costa pacífica de Colombia con la libertad absoluta que le proporciona un vehiculo de MAX-CARS.
+            Gracias a nuestro servicio de alquiler de vehiculos en Colombia, podrá descubrir muchos atractivos
+            turísticos de esta hermosa tierra con confort y flexibilidad. Nuestra flota está constituida por vehículos
+            totalmente equipados y con una antigüedad media de tan solo 3 meses. En nuestras oficinas encontrará
+            numerosos modelos de las principales marcas del mercado como Mercedes-Benz, Chevrolet, Volvo, Dodge y BMW.
+            Viva la experiencia de recorrer las calles de Medellín y avenidas de Bogotá con un descapotable o viaje en
+            familia con uno de nuestros SUV de gran capacidad. Muévase por tanto por la Costa norte y la Costa pacífica
+            de Colombia con la libertad absoluta que le proporciona un vehiculo de MAX-CARS.
           </p>
-          <button class="boton-reserva">Reservar ahora</button>
+          <a href="/renta.html"><button class="boton-reserva">Reservar ahora</button></a>
         </div>
       </div>
     </section>
@@ -116,7 +128,7 @@
       </div>
     </div>
   </footer>
-  
+
 </body>
 
 </html>

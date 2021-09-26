@@ -15,15 +15,21 @@
       <img src="./assets/logo.svg" alt="logo" class="logo">
       <span class="nombre">max-cars</span>
     </div>
-    <nav class="navegacion">
-      <ul>
-        <li><a href="/index.html">Inicio</a></li>
-        <li><a href="/renta.html">Renta</a></li>
-        <li><a href="/cliente.html">Cliente</a></li>
-        <li><a href="/vehiculo.html">Vehículo</a></li>
-        <li><a href="/reparacion.html">Reparacion</a></li>
-      </ul>
-    </nav>
+    <div class="nav-contenedor">
+      <input class="menu-input" type="checkbox" id="menu">
+      <label for="menu" class="menu-label">
+        <img class="menu-icon" src="./assets/svg/menu.svg" alt="menu">
+      </label>
+      <nav class="navegacion">
+        <ul>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/renta.html">Renta</a></li>
+          <li><a href="/cliente.html">Cliente</a></li>
+          <li><a href="/vehiculo.html">Vehículo</a></li>
+          <li><a href="/reparacion.html">Reparación</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="contenedor-principal">
     <section class="seccion">
@@ -65,9 +71,9 @@
 
         <div class="radio-contenedor">
           <span>¿ Vidrios polarizados ?:</span>
-          <input type="radio" id="si" name="polarizado" value=true>
+          <input checked type="radio" id="si" name="polarizado" value="true">
           <label for="si">Si</label>
-          <input type="radio" id="no" name="polarizado" value=false>
+          <input type="radio" id="no" name="polarizado" value="false">
           <label for="no">No</label>
         </div>
 
@@ -132,7 +138,7 @@
       </div>
     </div>
   </footer>
-  <script src="vehiculo.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>

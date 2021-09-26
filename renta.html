@@ -13,25 +13,30 @@
 <body>
     <header class="cabecera">
         <div class="logo-container">
-            <img src="./assets/logo.svg" alt="logo" class="logo">
-            <span class="nombre">max-cars</span>
+          <img src="./assets/logo.svg" alt="logo" class="logo">
+          <span class="nombre">max-cars</span>
         </div>
-        <nav class="navegacion">
+        <div class="nav-contenedor">
+          <input class="menu-input" type="checkbox" id="menu">
+          <label for="menu" class="menu-label">
+            <img class="menu-icon" src="./assets/svg/menu.svg" alt="menu">
+          </label>
+          <nav class="navegacion">
             <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/renta.html">Renta</a></li>
-                <li><a href="/cliente.html">Cliente</a></li>
-                <li><a href="/vehiculo.html">Vehiculo</a></li>
-                <li><a href="/reparacion.html">Reparacion</a></li>
+              <li><a href="/index.html">Inicio</a></li>
+              <li><a href="/renta.html">Renta</a></li>
+              <li><a href="/cliente.html">Cliente</a></li>
+              <li><a href="/vehiculo.html">Vehículo</a></li>
+              <li><a href="/reparacion.html">Reparación</a></li>
             </ul>
-        </nav>
-    </header>
+          </nav>
+        </div>
+      </header>
     <main class="contenedor-principal">
         <section class="seccion">
             <form class="form-renta" action="" onsubmit="insertCliente(event)">
                 <h1 class="form-titulo">Registro Renta</h1>
                 <div class="form-input-caja">
-
 
                     <label class="form-label" for="id-vehiculo">Id vehiculo</label>
                     <div class="validacion-contenedor">
@@ -55,7 +60,7 @@
                     </div>
                     <span class="form-label" for="dias">Dias a rentar</span>
                     <div class="validacion-contenedor radio-contenedor">
-                        <input required class="form-input remover-ancho" type="radio" name="dias-renta" id="1-semana" value="7">
+                        <input required checked class="form-input remover-ancho" type="radio" name="dias-renta" id="1-semana" value="7">
                         <label for="1-semana" class="form-label">1 semana</label>
                         <input required class="form-input remover-ancho" type="radio" name="dias-renta" id="2-semanas" value="15">
                         <label for="2-semanas" class="form-label">2 semanas</label>
@@ -129,7 +134,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="main.js"></script>
 
 </body>
 
