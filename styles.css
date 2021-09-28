@@ -79,7 +79,7 @@ body {
 
 .menu-input {
   position: absolute;
-  left: -999px;
+  right: -999px;
 }
 
 /* Inicia main */
